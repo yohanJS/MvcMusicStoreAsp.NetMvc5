@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Age</h3>
+
+@*add some logic*@
+
+@{
+    var message = "I am a message created using Razor syntax";
+}
+
+<!--render the result-->
+<h3>@message</h3>
+
+<!--Code Expression-->
+<h4>@(false != true)</h4>
+
+@Html.Raw("message unencoded")
+
+@if (true) 
+{
+    <p>it was true</p>
+}
